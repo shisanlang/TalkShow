@@ -53,6 +53,7 @@
 		ED66F96A19A70DC20027953A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED66F94619A70DC20027953A /* UIKit.framework */; };
 		ED66F97219A70DC20027953A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED66F97019A70DC20027953A /* InfoPlist.strings */; };
 		ED66F97419A70DC20027953A /* TalkShowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED66F97319A70DC20027953A /* TalkShowTests.m */; };
+		ED73DF8319AC7128003DEA13 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED73DF8219AC7128003DEA13 /* libsqlite3.dylib */; };
 		EDBDB66A19A70E2A00EA757C /* CRGradientNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EDBDB66919A70E2A00EA757C /* CRGradientNavigationBar.m */; };
 		EDEC765D19AADDA60022670F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEC765C19AADDA60022670F /* MBProgressHUD.m */; };
 		EDEC766119AAE0E00022670F /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = EDEC765F19AAE0E00022670F /* 37x-Checkmark.png */; };
@@ -75,6 +76,12 @@
 		EDEC769619AAEC4D0022670F /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEC768519AAEC4D0022670F /* UIImageView+WebCache.m */; };
 		EDEC769719AAEC4D0022670F /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEC768719AAEC4D0022670F /* UIView+WebCacheOperation.m */; };
 		EDEC769F19AB26BA0022670F /* Victorinox.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEC769E19AB26BA0022670F /* Victorinox.m */; };
+		EDEC76B819AC660B0022670F /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEC76AB19AC660B0022670F /* FMDatabase+InMemoryOnDiskIO.m */; };
+		EDEC76B919AC660B0022670F /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEC76AE19AC660B0022670F /* FMDatabase.m */; };
+		EDEC76BA19AC660B0022670F /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEC76B019AC660B0022670F /* FMDatabaseAdditions.m */; };
+		EDEC76BB19AC660B0022670F /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEC76B219AC660B0022670F /* FMDatabasePool.m */; };
+		EDEC76BC19AC660B0022670F /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEC76B419AC660B0022670F /* FMDatabaseQueue.m */; };
+		EDEC76BD19AC660B0022670F /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEC76B719AC660B0022670F /* FMResultSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +174,7 @@
 		ED66F96F19A70DC20027953A /* TalkShowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TalkShowTests-Info.plist"; sourceTree = "<group>"; };
 		ED66F97119A70DC20027953A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ED66F97319A70DC20027953A /* TalkShowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TalkShowTests.m; sourceTree = "<group>"; };
+		ED73DF8219AC7128003DEA13 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		EDBDB66819A70E2A00EA757C /* CRGradientNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRGradientNavigationBar.h; sourceTree = "<group>"; };
 		EDBDB66919A70E2A00EA757C /* CRGradientNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRGradientNavigationBar.m; sourceTree = "<group>"; };
 		EDEC765B19AADDA60022670F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -211,6 +219,19 @@
 		EDEC769E19AB26BA0022670F /* Victorinox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Victorinox.m; sourceTree = "<group>"; };
 		EDEC76A019AB5F550022670F /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = TalkShow/ThirdParty/Reveal/Reveal.framework; sourceTree = "<group>"; };
 		EDEC76A519AC32740022670F /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		EDEC76AA19AC660B0022670F /* FMDatabase+InMemoryOnDiskIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+InMemoryOnDiskIO.h"; sourceTree = "<group>"; };
+		EDEC76AB19AC660B0022670F /* FMDatabase+InMemoryOnDiskIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+InMemoryOnDiskIO.m"; sourceTree = "<group>"; };
+		EDEC76AD19AC660B0022670F /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		EDEC76AE19AC660B0022670F /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		EDEC76AF19AC660B0022670F /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		EDEC76B019AC660B0022670F /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		EDEC76B119AC660B0022670F /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		EDEC76B219AC660B0022670F /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		EDEC76B319AC660B0022670F /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		EDEC76B419AC660B0022670F /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		EDEC76B519AC660B0022670F /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		EDEC76B619AC660B0022670F /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		EDEC76B719AC660B0022670F /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +239,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED73DF8319AC7128003DEA13 /* libsqlite3.dylib in Frameworks */,
 				EDEC766419AAE5EF0022670F /* ImageIO.framework in Frameworks */,
 				ED5442DA19A7415D004D44D3 /* QuartzCore.framework in Frameworks */,
 				ED66F94519A70DC20027953A /* CoreGraphics.framework in Frameworks */,
@@ -413,6 +435,7 @@
 		ED66F94119A70DC20027953A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ED73DF8219AC7128003DEA13 /* libsqlite3.dylib */,
 				EDEC76A019AB5F550022670F /* Reveal.framework */,
 				EDEC766319AAE5EF0022670F /* ImageIO.framework */,
 				ED5442D919A7415D004D44D3 /* QuartzCore.framework */,
@@ -473,6 +496,7 @@
 		EDBDB66619A70E2A00EA757C /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				EDEC76A819AC660B0022670F /* fmdb */,
 				EDEC76A319AC32740022670F /* Reveal */,
 				EDEC766619AAEC4D0022670F /* SDWebImage */,
 				EDEC765A19AADDA60022670F /* MBProgressHUD */,
@@ -566,6 +590,42 @@
 				EDEC76A519AC32740022670F /* Reveal.framework */,
 			);
 			path = Reveal;
+			sourceTree = "<group>";
+		};
+		EDEC76A819AC660B0022670F /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				EDEC76A919AC660B0022670F /* extra */,
+				EDEC76AC19AC660B0022670F /* fmdb */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		EDEC76A919AC660B0022670F /* extra */ = {
+			isa = PBXGroup;
+			children = (
+				EDEC76AA19AC660B0022670F /* FMDatabase+InMemoryOnDiskIO.h */,
+				EDEC76AB19AC660B0022670F /* FMDatabase+InMemoryOnDiskIO.m */,
+			);
+			path = extra;
+			sourceTree = "<group>";
+		};
+		EDEC76AC19AC660B0022670F /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				EDEC76AD19AC660B0022670F /* FMDatabase.h */,
+				EDEC76AE19AC660B0022670F /* FMDatabase.m */,
+				EDEC76AF19AC660B0022670F /* FMDatabaseAdditions.h */,
+				EDEC76B019AC660B0022670F /* FMDatabaseAdditions.m */,
+				EDEC76B119AC660B0022670F /* FMDatabasePool.h */,
+				EDEC76B219AC660B0022670F /* FMDatabasePool.m */,
+				EDEC76B319AC660B0022670F /* FMDatabaseQueue.h */,
+				EDEC76B419AC660B0022670F /* FMDatabaseQueue.m */,
+				EDEC76B519AC660B0022670F /* FMDB.h */,
+				EDEC76B619AC660B0022670F /* FMResultSet.h */,
+				EDEC76B719AC660B0022670F /* FMResultSet.m */,
+			);
+			path = fmdb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -686,6 +746,7 @@
 				EDBDB66A19A70E2A00EA757C /* CRGradientNavigationBar.m in Sources */,
 				EDEC768A19AAEC4D0022670F /* SDImageCache.m in Sources */,
 				ED54425B19A71C17004D44D3 /* AFHTTPRequestOperationManager.m in Sources */,
+				EDEC76BB19AC660B0022670F /* FMDatabasePool.m in Sources */,
 				EDEC768B19AAEC4D0022670F /* SDWebImageCompat.m in Sources */,
 				ED54425F19A71C17004D44D3 /* AFURLConnectionOperation.m in Sources */,
 				EDEC769519AAEC4D0022670F /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -698,14 +759,19 @@
 				ED54425A19A71C17004D44D3 /* AFHTTPRequestOperation.m in Sources */,
 				ED5442D019A74144004D44D3 /* PullTableView.m in Sources */,
 				EDEC768C19AAEC4D0022670F /* SDWebImageDecoder.m in Sources */,
+				EDEC76BA19AC660B0022670F /* FMDatabaseAdditions.m in Sources */,
+				EDEC76B819AC660B0022670F /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
 				ED54426419A71C17004D44D3 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				ED66F94F19A70DC20027953A /* main.m in Sources */,
 				EDEC769619AAEC4D0022670F /* UIImageView+WebCache.m in Sources */,
+				EDEC76B919AC660B0022670F /* FMDatabase.m in Sources */,
+				EDEC76BD19AC660B0022670F /* FMResultSet.m in Sources */,
 				EDEC768F19AAEC4D0022670F /* SDWebImageManager.m in Sources */,
 				ED5442CD19A74144004D44D3 /* EGORefreshTableHeaderView.m in Sources */,
 				ED5442DF19A747C6004D44D3 /* UIView+Common.m in Sources */,
 				ED54426E19A71C72004D44D3 /* BaseViewController.m in Sources */,
 				ED54426019A71C17004D44D3 /* AFURLRequestSerialization.m in Sources */,
+				EDEC76BC19AC660B0022670F /* FMDatabaseQueue.m in Sources */,
 				EDEC768819AAEC4D0022670F /* MKAnnotationView+WebCache.m in Sources */,
 				EDEC769F19AB26BA0022670F /* Victorinox.m in Sources */,
 				ED54425C19A71C17004D44D3 /* AFHTTPSessionManager.m in Sources */,

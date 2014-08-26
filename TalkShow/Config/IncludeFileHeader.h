@@ -27,6 +27,7 @@
 #import "UIImageView+WebCache.h"
 //正则
 //DB
+#import "FMDatabase.h"
 //Cache
 //瑞士军刀
 #import "Victorinox.h"
