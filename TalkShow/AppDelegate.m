@@ -21,12 +21,13 @@
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithNavigationBarClass:[CRGradientNavigationBar class] toolbarClass:nil];
 
-    UIColor *firstColor = RGB(86, 236, 208);
-    UIColor *secondColor = RGB(91, 203, 253);
+    UIColor *firstColor = RGBA(86, 236, 208, 1);
+    UIColor *secondColor = RGBA(91, 203, 253, 1);
     
     NSArray *colors = [NSArray arrayWithObjects:(id)firstColor.CGColor, (id)secondColor.CGColor, nil];
     
     [[CRGradientNavigationBar appearance] setBarTintGradientColors:colors];
+//    [[CRGradientNavigationBar appearance] setBarTintColor:UIColorFromRGB(0xEE695D)];
     [[navigationController navigationBar] setTranslucent:NO]; // Remember, the default value is YES.
     
     //ViewController

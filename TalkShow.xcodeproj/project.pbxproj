@@ -74,6 +74,7 @@
 		EDEC769519AAEC4D0022670F /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEC768319AAEC4D0022670F /* UIImageView+HighlightedWebCache.m */; };
 		EDEC769619AAEC4D0022670F /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEC768519AAEC4D0022670F /* UIImageView+WebCache.m */; };
 		EDEC769719AAEC4D0022670F /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEC768719AAEC4D0022670F /* UIView+WebCacheOperation.m */; };
+		EDEC769F19AB26BA0022670F /* Victorinox.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEC769E19AB26BA0022670F /* Victorinox.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -206,6 +207,10 @@
 		EDEC768519AAEC4D0022670F /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		EDEC768619AAEC4D0022670F /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		EDEC768719AAEC4D0022670F /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		EDEC769D19AB26BA0022670F /* Victorinox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Victorinox.h; sourceTree = "<group>"; };
+		EDEC769E19AB26BA0022670F /* Victorinox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Victorinox.m; sourceTree = "<group>"; };
+		EDEC76A019AB5F550022670F /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = TalkShow/ThirdParty/Reveal/Reveal.framework; sourceTree = "<group>"; };
+		EDEC76A519AC32740022670F /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -380,6 +385,8 @@
 			children = (
 				ED5442DD19A747C6004D44D3 /* UIView+Common.h */,
 				ED5442DE19A747C6004D44D3 /* UIView+Common.m */,
+				EDEC769D19AB26BA0022670F /* Victorinox.h */,
+				EDEC769E19AB26BA0022670F /* Victorinox.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -406,6 +413,7 @@
 		ED66F94119A70DC20027953A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EDEC76A019AB5F550022670F /* Reveal.framework */,
 				EDEC766319AAE5EF0022670F /* ImageIO.framework */,
 				ED5442D919A7415D004D44D3 /* QuartzCore.framework */,
 				ED66F94219A70DC20027953A /* Foundation.framework */,
@@ -465,6 +473,7 @@
 		EDBDB66619A70E2A00EA757C /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				EDEC76A319AC32740022670F /* Reveal */,
 				EDEC766619AAEC4D0022670F /* SDWebImage */,
 				EDEC765A19AADDA60022670F /* MBProgressHUD */,
 				ED5442BA19A74144004D44D3 /* EGOTableViewPullRefresh */,
@@ -549,6 +558,14 @@
 				EDEC768719AAEC4D0022670F /* UIView+WebCacheOperation.m */,
 			);
 			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		EDEC76A319AC32740022670F /* Reveal */ = {
+			isa = PBXGroup;
+			children = (
+				EDEC76A519AC32740022670F /* Reveal.framework */,
+			);
+			path = Reveal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -690,6 +707,7 @@
 				ED54426E19A71C72004D44D3 /* BaseViewController.m in Sources */,
 				ED54426019A71C17004D44D3 /* AFURLRequestSerialization.m in Sources */,
 				EDEC768819AAEC4D0022670F /* MKAnnotationView+WebCache.m in Sources */,
+				EDEC769F19AB26BA0022670F /* Victorinox.m in Sources */,
 				ED54425C19A71C17004D44D3 /* AFHTTPSessionManager.m in Sources */,
 				ED5442CE19A74144004D44D3 /* LoadMoreTableFooterView.m in Sources */,
 				ED54425D19A71C17004D44D3 /* AFNetworkReachabilityManager.m in Sources */,
@@ -822,10 +840,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TalkShow/ThirdParty/Reveal",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TalkShow/TalkShow-Prefix.pch";
 				INFOPLIST_FILE = "TalkShow/TalkShow-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TalkShow/ThirdParty/Reveal",
+				);
+				OTHER_LDFLAGS = (
+					"-objC",
+					"-ObjC",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -836,10 +868,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TalkShow/ThirdParty/Reveal",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TalkShow/TalkShow-Prefix.pch";
 				INFOPLIST_FILE = "TalkShow/TalkShow-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TalkShow/ThirdParty/Reveal",
+				);
+				OTHER_LDFLAGS = (
+					"-objC",
+					"-ObjC",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -36,12 +36,12 @@
 {
     [super viewDidLoad];
     
-    pullTableView = [[PullTableView alloc]initWithFrame:CGRectMake(0, 0, XD_VIEW_WIDTH, XD_DVIEW_HEIGHT)];
+    pullTableView = [[PullTableView alloc]initWithFrame:CGRectMake(0, 0, XD_VIEW_WIDTH, XD_DVIEW_HEIGHT)];//self.view.bounds
     pullTableView.pullDelegate = self;
     pullTableView.dataSource = self;
     pullTableView.pullArrowImage = [UIImage imageNamed:@"blackArrow"];
-    pullTableView.pullBackgroundColor = [UIColor yellowColor];
-    pullTableView.pullTextColor = [UIColor blackColor];
+    pullTableView.pullBackgroundColor = C_CLEAR_COLOR;
+    pullTableView.pullTextColor = C_GRAY2_COLOR;
     [self.view addSubview:pullTableView];
 
     
