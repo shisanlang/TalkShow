@@ -60,18 +60,18 @@
 //                          }];
 //    [self.view addSubview:imageV];
     
-//    NSString* docsdir = [NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-//    NSString* dbpath = [docsdir stringByAppendingPathComponent:@"user.sqlite"];
-//
-//    FMDatabase *db = [FMDatabase databaseWithPath:dbpath];
-//    if (![db open]) {
-//        return;
-//    }
-//    FMResultSet *s = [db executeQuery:@"SELECT COUNT(*) FROM myTable"];
-//    if ([s next]) {
-//        int totalCount = [s intForColumnIndex:0];
-//    }
-//    [db close];
+    NSString* docsdir = [NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString* dbpath = [docsdir stringByAppendingPathComponent:@"user.sqlite"];
+
+    FMDatabase *db = [FMDatabase databaseWithPath:dbpath];
+    if (![db open]) {
+        return;
+    }
+    FMResultSet *s = [db executeQuery:@"SELECT COUNT(*) FROM myTable"];
+    if ([s next]) {
+        int totalCount = [s intForColumnIndex:0];
+    }
+    [db close];
 }
 
 - (void)viewWillAppear:(BOOL)animated
