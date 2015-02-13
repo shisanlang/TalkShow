@@ -19,7 +19,9 @@
     //Nav
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithNavigationBarClass:[CRGradientNavigationBar class] toolbarClass:nil];
+//    UINavigationController *navigationController = [[UINavigationController alloc] initWithNavigationBarClass:[CRGradientNavigationBar class] toolbarClass:nil];
+    MLNavigationController *navigationController = [[MLNavigationController alloc] initWithNavigationBarClass:[CRGradientNavigationBar class] toolbarClass:nil];
+
 
     UIColor *firstColor = RGBA(86, 236, 208, 1);
     UIColor *secondColor = RGBA(91, 203, 253, 1);

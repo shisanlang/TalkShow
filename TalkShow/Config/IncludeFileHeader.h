@@ -16,11 +16,16 @@
 //nav
 #import "CRGradientNavigationBar.h"
 #define UIColorFromRGB(rgbValue)[UIColor colorWithRed:((float)((rgbValue&0xFF0000)>>16))/255.0 green:((float)((rgbValue&0xFF00)>>8))/255.0 blue:((float)(rgbValue&0xFF))/255.0 alpha:1.0]
+
+#import "MLNavigationController.h"
 //url
 #import "AFHTTPRequestOperationManager.h"
-#define AFHTTP [AFHTTPRequestOperationManager manager]
+#import "AFServer.h"
+#define AFHTTP [AFServer sharedInstance]
+#define HTTP_TIME_OUT 10
 //table
-#import "PullTableView.h"
+//#import "PullTableView.h"
+#import "SVPullToRefresh.h"
 //hub
 #import "MBProgressHUD.h"
 //image
@@ -31,5 +36,11 @@
 //Cache
 //瑞士军刀
 #import "Victorinox.h"
+//Button
+#import "Button+Block.h"
+//View
+#import "BaseViewController.h"
+#import "VideoViewController.h"
+#import "PlayVideoViewController.h"
 
 #endif

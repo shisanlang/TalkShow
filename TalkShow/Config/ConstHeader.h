@@ -16,6 +16,9 @@
 #define DLog(...)
 #endif
 
+//
+#define USER_TOKEN [[NSUserDefaults standardUserDefaults] objectForKey:@"USER_TOKEN"]
+
 // 版本
 #define APP_VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 #define APP_NAME [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"]
@@ -97,12 +100,5 @@ alpha:1.0]
 #else
 #   define kLineBreakModeCharaterWrap   UILineBreakModeCharacterWrap
 #endif
-
-
-
-
-
-
-
 
 #endif

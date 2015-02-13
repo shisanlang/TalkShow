@@ -6,13 +6,15 @@
 //  Copyright (c) 2014年 dxd. All rights reserved.
 //
 
-#import "BaseViewController.h"
-
-@interface HomeViewController :  BaseViewController <UITableViewDataSource, PullTableViewDelegate>{
-    PullTableView *pullTableView;
-
+@interface HomeViewController :  BaseViewController <UITableViewDataSource,UITableViewDelegate>{
+//    PullTableView *pullTableView;
+//    UITableView * tableView;
+    int page;
 }
 
 //@property (nonatomic, retain) PullTableView *pullTableView;
+@property (nonatomic, retain) UITableView * listView;
+@property (nonatomic, retain) NSMutableArray * data;
+
 
 @end
