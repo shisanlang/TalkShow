@@ -10,4 +10,14 @@
 
 @implementation Victorinox
 
+//调试time
++ (void)printDebugTime:(NSString *)tagString {
+    NSString* date;
+    NSDateFormatter * formatter = [[NSDateFormatter alloc ] init];
+    [formatter setDateFormat:@"hh:mm:ss:SSS"];
+    date = [formatter stringFromDate:[NSDate date]];
+    NSString * timeNow = [[NSString alloc] initWithFormat:@"%@_%@",tagString, date];
+    DLog(@"%@", timeNow);
+}
+
 @end

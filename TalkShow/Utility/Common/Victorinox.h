@@ -10,4 +10,8 @@
 
 @interface Victorinox : NSObject
 
+//调试time
++ (void)printDebugTime:(NSString *)tagString;
+
+
 @end
